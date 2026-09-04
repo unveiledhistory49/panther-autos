@@ -264,8 +264,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .hero-cta .btn-red{flex:1 1 100%; text-align:center}
   .hero-cta .btn-ghost{flex:1 1 100%; text-align:center; background:none; border-color:transparent; box-shadow:none; color:var(--ice); text-decoration:underline; text-underline-offset:3px; min-height:44px}
   .trust-strip{font-size:.82rem; margin-top:14px}
-  /* Badge becomes a proper tag inside the section, off the seam */
-  .since-badge{position:static; transform:none; display:inline-block; margin:0 0 14px}
   .marquee{font-size:.85rem}
   /* Process section cut on mobile */
   #steps{display:none}
