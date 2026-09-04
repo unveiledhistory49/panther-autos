@@ -119,6 +119,20 @@
   wireForm("hero-form");
   wireForm("booking-form");
 
+  // Sticky book bar: hidden while the hero CTAs are on screen, slides in after.
+  var sticky = document.querySelector(".sticky-book");
+  var heroCta = document.querySelector(".hero-cta");
+  if (sticky && heroCta && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        var past = !en.isIntersecting && en.boundingClientRect.top < 0;
+        sticky.classList.toggle("show", past);
+      });
+    }).observe(heroCta);
+  } else if (sticky) {
+    sticky.classList.add("show");
+  }
+
   // Mobile FAQ: first 3 shown, rest behind a toggle.
   var moreBtn = document.getElementById("more-faq");
   var acc = document.querySelector(".accordion");

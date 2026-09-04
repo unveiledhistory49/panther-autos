@@ -239,14 +239,26 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .more-faq{display:none}
 @media (max-width: 640px){
   body{padding-bottom:78px}
-  h1{font-size:2.05rem}
+  h1{font-size:1.5rem; line-height:1.12}
+  h2{font-size:1.35rem}
+  p{margin-bottom:.8rem}
+  .who-copy p,.snooker-copy p,.why-list p,.visit-cards p,.booking-copy p{font-size:.95rem}
+  .btn{padding:12px 20px; font-size:.82rem; min-height:44px}
+  /* Compact header */
+  .header-inner{padding:8px 20px}
+  .brand img{width:44px; height:44px}
+  .brand-name{font-size:1.15rem}
+  .brand-sub{font-size:.65rem; letter-spacing:.28em}
+  .nav-toggle{padding:10px}
   .section{padding:44px 0}
   .section-sub{margin-bottom:1.5rem}
   /* Hero: headline plus CTAs only, form lives in booking section */
   .hero-grid{padding:40px 20px 56px; gap:0}
   .hero-form-card{display:none}
   .hero-points{display:none}
-  .lede{font-size:1rem}
+  .kicker{font-size:.7rem; letter-spacing:.08em; padding:7px 12px}
+  .lede{font-size:.95rem}
+  .hero-cta{gap:10px}
   .hero-cta .btn{flex:1 1 100%; text-align:center}
   .marquee{font-size:.85rem}
   /* Process section cut on mobile */
@@ -271,11 +283,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .accordion details.extra{display:none}
   .accordion.show-all details.extra{display:block}
   .more-faq{display:inline-block; margin-top:8px}
-  /* Sticky booking bar */
+  /* Sticky booking bar, slides in only after the hero CTAs scroll away */
   .sticky-book{
     display:block; position:fixed; left:0; right:0; bottom:0; z-index:60;
     padding:10px 16px calc(10px + env(safe-area-inset-bottom));
     background:rgba(0,0,0,.92); border-top:1px solid var(--line);
+    transform:translateY(110%); transition:transform .3s ease;
   }
+  .sticky-book.show{transform:none}
   .sticky-book .btn{width:100%; text-align:center}
 }
