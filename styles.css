@@ -70,6 +70,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .nav-toggle{display:none; background:none; border:1px solid var(--line); border-radius:8px; padding:12px; cursor:pointer}
 .nav-toggle span{display:block; width:22px; height:2px; background:#fff; margin:4px 0}
 .mobile-menu{display:flex; flex-direction:column; gap:6px; padding:12px 24px 20px; background:#000; border-top:1px solid var(--line)}
+.mobile-menu[hidden]{display:none}
 .mobile-menu a{color:#fff; text-decoration:none; padding:12px 4px; font-weight:600}
 
 /* Hero */
