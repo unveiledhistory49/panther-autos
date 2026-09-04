@@ -90,7 +90,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .hero-points svg{width:22px; height:22px; flex:none; color:var(--blue)}
 .hero-cta{display:flex; gap:14px; flex-wrap:wrap}
 .trust-strip{margin:18px 0 0; font-size:.88rem; color:var(--muted)}
-.trust-strip a{color:var(--ice); font-weight:600}
+.trust-strip a, .visit-cards article a{color:var(--ice); font-weight:600; text-decoration:underline; text-underline-offset:3px}
 .claw-divider{position:relative; height:34px; background:var(--red); clip-path:polygon(0 55%, 4% 0, 7% 55%, 11% 0, 14% 55%, 22% 0, 25% 55%, 33% 0, 36% 55%, 48% 0, 51% 55%, 63% 0, 66% 55%, 78% 0, 81% 55%, 93% 0, 96% 55%, 100% 0, 100% 100%, 0 100%);}
 
 /* Hero form: the single glass accent */
@@ -259,11 +259,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .hero-form-card{display:none}
   .hero-points{display:none}
   .kicker{display:none}
-  .lede{font-size:.95rem}
+  .lede{font-size:.95rem; margin-bottom:.5rem}
+  .hero-copy h1{margin-bottom:.4rem}
   .hero-cta{gap:10px}
   .hero-cta .btn-red{flex:1 1 100%; text-align:center}
   .hero-cta .btn-ghost{flex:1 1 100%; text-align:center; background:none; border-color:transparent; box-shadow:none; color:var(--ice); text-decoration:underline; text-underline-offset:3px; min-height:44px}
-  .trust-strip{font-size:.82rem; margin-top:14px}
+  .trust-strip{font-size:.82rem; margin-top:10px}
   .marquee{font-size:.85rem}
   /* Process section cut on mobile */
   #steps{display:none}
