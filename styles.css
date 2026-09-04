@@ -256,7 +256,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .hero-grid{padding:40px 20px 56px; gap:0}
   .hero-form-card{display:none}
   .hero-points{display:none}
-  .kicker{font-size:.7rem; letter-spacing:.08em; padding:7px 12px}
+  .kicker{display:none}
   .lede{font-size:.95rem}
   .hero-cta{gap:10px}
   .hero-cta .btn{flex:1 1 100%; text-align:center}
