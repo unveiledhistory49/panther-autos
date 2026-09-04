@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Panther Auto Care | Car Wash and Snooker Bar in Ikotun</title>
+<meta name="description" content="Panther Auto Care at 53 Amudalatu Street, Agodo Egbe, Ikotun. Car wash, luxury wash, vacuum cleaning, buffing, engine steaming, rug washing, plus a snooker bar, free WiFi and car tracking." />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Panther Auto Care home">
+      <img src="assets/logo.png" alt="Panther Auto Care logo, panther over a blue car with Car Wash and Snooker Bar lettering" width="56" height="56" />
+      <span class="brand-text">
+        <span class="brand-name">PANTHER</span>
+        <span class="brand-sub">AUTO CARE</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#who">Who We Are</a>
+      <a href="#services">Wash Services</a>
+      <a href="#snooker">Snooker Bar</a>
+      <a href="#visit">Visit Us</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-red" href="#booking">Book a Wash</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile" hidden>
+    <a href="#who">Who We Are</a>
+    <a href="#services">Wash Services</a>
+    <a href="#snooker">Snooker Bar</a>
+    <a href="#steps">How It Works</a>
+    <a href="#visit">Visit Us</a>
+    <a href="#faq">Questions</a>
+    <a class="btn btn-red" href="#booking">Book a Wash</a>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="assets/wash-bay.jpg" alt="" />
+      <div class="hero-shade"></div>
+      <div class="bubble-field" id="bubble-field"></div>
+    </div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker"><span class="kicker-dot" aria-hidden="true"></span> Ikotun, Lagos &middot; Wash while you play</p>
+        <h1 id="hero-title">GET YOUR CAR LOOKING LIKE <span class="red">NEW</span>.<br />THEN STAY FOR <span class="blue">SNOOKER</span>.</h1>
+        <p class="lede">Panther Auto Care is a full wash bay and snooker bar at 53 Amudalatu Street, Agodo Egbe. Drive in for a wash, vacuum, buff or engine steam, and wait on the snooker table with free WiFi, not in a queue.</p>
+        <ul class="hero-points">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Full exterior and interior wash, plus luxury detailing</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Rug washing, buffing and engine steaming on site</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> No dull waiting room. Snooker tables under the canopy</li>
+        </ul>
+        <div class="hero-cta">
+          <a class="btn btn-red" href="#booking">Book a Wash</a>
+          <a class="btn btn-ghost" href="#services">View Wash Services</a>
+        </div>
+      </div>
+      <div class="hero-form-card">
+        <form class="lead-form" id="hero-form" novalidate>
+          <h2>Leave a Message</h2>
+          <p class="form-sub">Tell us what your car needs and we will call you back to confirm a slot.</p>
+          <label>Full name
+            <input type="text" name="name" placeholder="Name" autocomplete="name" required />
+          </label>
+          <label>Phone
+            <input type="tel" name="phone" placeholder="Phone" autocomplete="tel" required />
+          </label>
+          <label>What do you need?
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option>Car Wash</option>
+              <option>Luxury Car Wash</option>
+              <option>Vacuum Cleaning</option>
+              <option>Car Buffing</option>
+              <option>Engine Steaming</option>
+              <option>Rug Washing</option>
+              <option>Snooker Bar visit</option>
+            </select>
+          </label>
+          <label>Message
+            <textarea name="message" rows="3" placeholder="Message"></textarea>
+          </label>
+          <p class="form-status" role="status" aria-live="polite" hidden></p>
+          <button class="btn btn-blue" type="submit">Request a Call Back</button>
+        </form>
+      </div>
+    </div>
+    <div class="claw-divider" aria-hidden="true"></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Car Wash</span><i>●</i><span>Luxury Wash</span><i>●</i><span>Vacuum</span><i>●</i><span>Buffing</span><i>●</i><span>Engine Steaming</span><i>●</i><span>Rug Washing</span><i>●</i><span>Snooker Bar</span><i>●</i><span>Free WiFi</span><i>●</i>
+      <span>Car Wash</span><i>●</i><span>Luxury Wash</span><i>●</i><span>Vacuum</span><i>●</i><span>Buffing</span><i>●</i><span>Engine Steaming</span><i>●</i><span>Rug Washing</span><i>●</i><span>Snooker Bar</span><i>●</i><span>Free WiFi</span><i>●</i>
+    </div>
+  </div>
+
+  <!-- WHO WE ARE -->
+  <section class="section who" id="who" aria-labelledby="who-title">
+    <div class="wrap who-grid">
+      <div class="who-photos">
+        <img class="who-main" src="assets/site-night.jpg" alt="Panther Auto Care illuminated sign on the wall at night" loading="lazy" />
+        <img class="who-small" src="assets/site-day.jpg" alt="Cars parked under the Panther wash canopy during the day" loading="lazy" />
+        <p class="since-badge">Wash <strong>+ Play</strong> in one stop</p>
+      </div>
+      <div class="who-copy">
+        <p class="eyebrow">Who we are</p>
+        <h2 id="who-title">A REAL WASH BAY, NOT A ROADSIDE BUCKET JOB.</h2>
+        <p>Panther Auto Care runs a paved, canopied wash bay in Agodo Egbe, Ikotun. Cars are washed under cover, interiors vacuumed and detailed on site, and rugs, engines and paint get their own dedicated treatments.</p>
+        <p>The difference is what you do while you wait. There are full-size snooker tables steps from the bay, free WiFi, and staff who call you the moment your car is ready. Bring work, bring friends, or bring your cue form.</p>
+        <a class="btn btn-red" href="#booking">Book a Wash</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <p class="eyebrow center">Wash services</p>
+      <h2 class="center" id="services-title">PICK THE WASH YOUR CAR ACTUALLY NEEDS</h2>
+      <p class="section-sub center">Every service happens at our Ikotun bay. Ask for a combination when you book and we will line them up in one visit.</p>
+      <div class="service-grid">
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l1.5-4.5A2 2 0 0 1 8.4 6h7.2a2 2 0 0 1 1.9 1.5L19 12m-14 0h14a2 2 0 0 1 2 2v3h-2.2M5 12a2 2 0 0 0-2 2v3h2.2m-.2-5v5m14-5v5M7.5 17a1.7 1.7 0 1 0 0-.01M16.5 17a1.7 1.7 0 1 0 0-.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Car Wash</h3>
+          <p>Full exterior wash to lift dust, mud and road film, finished with a clean dry so your car leaves the bay sharp.</p>
+        </article>
+        <article class="card featured">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 4.9 5.3.5-4 3.6 1.2 5.2L12 14.3 7.3 17.2l1.2-5.2-4-3.6 5.3-.5L12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+          <h3>Luxury Car Wash</h3>
+          <p>The slow, careful wash. Extra attention to paint, trims, wheels and glass for cars that need to look their best.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9h9v4H4zM13 10l4-3v7l-4-2M6 13v5m3-5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Vacuum Cleaning</h3>
+          <p>Seats, carpets, boot and hard-to-reach corners vacuumed out, so the inside matches the freshly washed outside.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 4.5v3M12 16.5v3M4.5 12h3M16.5 12h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Car Buffing</h3>
+          <p>Machine buffing to revive dull paint, soften swirls and bring back gloss before a full wash finish.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 8h10v9H7zM7 8l-2 2m2-2l2-2m8 2l2 2m-2-2l-2-2M10 12h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Engine Steaming</h3>
+          <p>Controlled steam clean for the engine bay that lifts grease without soaking the electronics.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 10.5h16M8 7v10M12 7v10M16 7v10" stroke="currentColor" stroke-width="1.4"/></svg></div>
+          <h3>Rug Washing</h3>
+          <p>Bring household and car rugs. We wash, rinse and dry them properly instead of a quick roadside shake.</p>
+        </article>
+      </div>
+      <div class="mini-strip">
+        <div><strong>Free WiFi</strong><span>Work or stream while your car is washed</span></div>
+        <div><strong>Car Tracking Service</strong><span>Ask the team about fitting and setup</span></div>
+        <div><strong>Snooker Bar</strong><span>Tables open while the bay is open</span></div>
+      </div>
+      <p class="center"><a class="btn btn-red" href="#booking">Book a Wash</a></p>
+    </div>
+  </section>
+
+  <!-- SNOOKER -->
+  <section class="section snooker" id="snooker" aria-labelledby="snooker-title">
+    <div class="wrap snooker-grid">
+      <div class="snooker-copy">
+        <p class="eyebrow light">The other half of Panther</p>
+        <h2 id="snooker-title">YOUR CAR GETS WASHED. YOU GET THE TABLE.</h2>
+        <p>Panther is a car wash <em>and</em> a snooker bar. The tables sit under the same canopy as the bay, so you can see your car while you play. Come for a frame even when your car is clean.</p>
+        <ul class="tick-list">
+          <li>Full-size tables on the same paved compound as the wash</li>
+          <li>Open-air seating, drinks nearby, room for spectators</li>
+          <li>Staff flag you the moment your wash or detail is done</li>
+        </ul>
+        <div class="snooker-cta">
+          <a class="btn btn-white" href="#booking">Book Wash + Play</a>
+          <a class="btn btn-outline-light" href="#visit">Find the Tables</a>
+        </div>
+      </div>
+      <div class="snooker-photo">
+        <img src="assets/snooker.jpg" alt="Players around full-size snooker tables at Panther Auto Care" loading="lazy" />
+        <p class="eight-ball" aria-hidden="true"><span>8</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="section steps" id="steps" aria-labelledby="steps-title">
+    <div class="wrap">
+      <p class="eyebrow center">How it works</p>
+      <h2 class="center" id="steps-title">DRIVE IN, HAND OVER, PLAY, DRIVE OUT</h2>
+      <div class="step-rail">
+        <article class="step">
+          <p class="step-num">01</p>
+          <h3>Drive in or book ahead</h3>
+          <p>Roll into 53 Amudalatu Street or send the booking form. Tell us the car and the service you want.</p>
+        </article>
+        <article class="step">
+          <p class="step-num">02</p>
+          <h3>We wash and detail</h3>
+          <p>Your car goes under the canopy for washing, vacuuming, buffing or steaming, in the order you agreed.</p>
+        </article>
+        <article class="step">
+          <p class="step-num">03</p>
+          <h3>Play while you wait</h3>
+          <p>Take a snooker table, connect to the free WiFi, and relax. No standing over the washers.</p>
+        </article>
+        <article class="step">
+          <p class="step-num">04</p>
+          <h3>Inspect and pay</h3>
+          <p>Walk around the car with us, check the finish, settle up and drive out clean.</p>
+        </article>
+      </div>
+      <p class="center"><a class="btn btn-blue" href="#booking">Book a Wash</a></p>
+    </div>
+  </section>
+
+  <!-- VISIT / GALLERY -->
+  <section class="section visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <p class="eyebrow center">The compound</p>
+      <h2 class="center" id="visit-title">BIG YARD. COVERED BAYS. ROOM TO PARK.</h2>
+      <p class="section-sub center">Paved parking, shaded wash bays and the snooker canopy, all on one site in Agodo Egbe.</p>
+      <div class="gallery">
+        <img src="assets/site-wide.jpg" alt="Wide view of the Panther compound with cars under the canopy" loading="lazy" />
+        <img src="assets/wash-bay-2.jpg" alt="Black SUV freshly washed under the Panther canopy" loading="lazy" />
+        <img src="assets/site-day.jpg" alt="Cars lined up in the Panther wash bay" loading="lazy" />
+      </div>
+      <div class="visit-cards">
+        <article>
+          <h3>Address</h3>
+          <p>53, Amudalatu Street, Agodo Egbe, Ikotun, Lagos</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=53+Amudalatu+Street+Agodo+Egbe+Ikotun" target="_blank" rel="noopener">Open in Google Maps</a>
+        </article>
+        <article>
+          <h3>What to expect</h3>
+          <p>Drive straight into the yard. The team will point you to a bay, confirm the service and price, then point you to a table or seat.</p>
+        </article>
+        <article>
+          <h3>Good to know</h3>
+          <p>Free WiFi on site. Car tracking fittings by arrangement. Rug drop-offs accepted during opening hours.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section why" aria-labelledby="why-title">
+    <div class="wrap why-grid">
+      <div>
+        <p class="eyebrow">Why Panther</p>
+        <h2 id="why-title">ONE STOP FOR THE CAR AND THE AFTERNOON</h2>
+        <ul class="why-list">
+          <li><span class="n">1</span><div><strong>Everything in one yard</strong><p>Wash, vacuum, buff, steam and rugs handled together, so you do not drive between shops.</p></div></li>
+          <li><span class="n">2</span><div><strong>Waiting that is actually pleasant</strong><p>Snooker, shade, seating and WiFi instead of standing by the road watching your car dry.</p></div></li>
+          <li><span class="n">3</span><div><strong>Easy to find in Ikotun</strong><p>One address on Amudalatu Street with space to park, turn and queue without blocking the road.</p></div></li>
+        </ul>
+        <a class="btn btn-red" href="#booking">Book a Wash</a>
+      </div>
+      <div class="why-photo">
+        <img src="assets/site-night.jpg" alt="Panther Auto Care glowing sign at the gate at night" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq-narrow">
+      <h2 class="center" id="faq-title">GOT QUESTIONS? WE HAVE ANSWERS.</h2>
+      <p class="section-sub center">Real answers about visiting Panther in Ikotun.</p>
+      <div class="accordion">
+        <details open>
+          <summary>Do I need to book in advance?<span aria-hidden="true">+</span></summary>
+          <p>No. You can drive straight into the yard at 53 Amudalatu Street. Booking ahead with the form below helps us line up luxury washes, buffing or rug jobs so you wait less.</p>
+        </details>
+        <details>
+          <summary>How long does a wash take?<span aria-hidden="true">+</span></summary>
+          <p>A standard wash and vacuum is usually done within the hour, depending on the queue. Luxury washes, buffing and engine steaming take longer. The team will give you a time estimate before they start.</p>
+        </details>
+        <details>
+          <summary>Can I play snooker while my car is washed?<span aria-hidden="true">+</span></summary>
+          <p>Yes, that is the point. The tables are steps from the bays. Play as long as your car is being worked on and staff will call you when it is ready for inspection.</p>
+        </details>
+        <details>
+          <summary>Do you wash rugs and interiors?<span aria-hidden="true">+</span></summary>
+          <p>Yes. We wash household and car rugs, vacuum seats, carpets and boots, and handle engine steaming and paint buffing as separate services. Mention everything when you book so we plan one visit.</p>
+        </details>
+        <details>
+          <summary>Is there WiFi and parking?<span aria-hidden="true">+</span></summary>
+          <p>Yes. Free WiFi is available across the compound and there is paved parking under and around the canopy, with room to queue off the street.</p>
+        </details>
+        <details>
+          <summary>What is the car tracking service?<span aria-hidden="true">+</span></summary>
+          <p>We arrange car tracking fittings and setup through the team on site. Send a message with your car model using the booking form and we will call back with options and pricing.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section booking" id="booking" aria-labelledby="booking-title">
+    <div class="wrap booking-grid">
+      <div class="booking-copy">
+        <h2 id="booking-title">DO NOT MISS A DROP.</h2>
+        <p>Fill the form and we will call back to confirm your slot. Tell us the car, the service and when you want to come.</p>
+        <ul>
+          <li>53, Amudalatu Street, Agodo Egbe, Ikotun</li>
+          <li>Car Wash and Snooker Bar</li>
+          <li>Free WiFi while you wait</li>
+        </ul>
+      </div>
+      <form class="booking-form" id="booking-form" novalidate>
+        <label>Full name
+          <input type="text" name="name" placeholder="Name" autocomplete="name" required />
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" placeholder="Phone" autocomplete="tel" required />
+        </label>
+        <label>Service needed
+          <select name="service" required>
+            <option value="">Select a service</option>
+            <option>Car Wash</option>
+            <option>Luxury Car Wash</option>
+            <option>Vacuum Cleaning</option>
+            <option>Car Buffing</option>
+            <option>Engine Steaming</option>
+            <option>Rug Washing</option>
+            <option>Car Tracking Service</option>
+            <option>Snooker Bar visit</option>
+          </select>
+        </label>
+        <label>Message
+          <textarea name="message" rows="4" placeholder="Car model, preferred day, anything else"></textarea>
+        </label>
+        <p class="form-status" role="status" aria-live="polite" hidden></p>
+        <button class="btn btn-red" type="submit">Request a Call Back</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Panther Auto Care logo" width="64" height="64" loading="lazy" />
+      <p><strong>PANTHER AUTO CARE</strong><br />Car Wash and Snooker Bar<br />53, Amudalatu Street, Agodo Egbe, Ikotun</p>
+    </div>
+    <nav aria-label="Footer">
+      <p class="footer-head">Panther</p>
+      <a href="#who">Who We Are</a>
+      <a href="#services">Wash Services</a>
+      <a href="#snooker">Snooker Bar</a>
+      <a href="#steps">How It Works</a>
+    </nav>
+    <div>
+      <p class="footer-head">Services</p>
+      <p>Car Wash &middot; Luxury Wash &middot; Vacuum &middot; Buffing &middot; Engine Steaming &middot; Rug Washing &middot; Car Tracking &middot; Free WiFi</p>
+    </div>
+    <div>
+      <p class="footer-head">Visit</p>
+      <p>53, Amudalatu Street,<br />Agodo Egbe, Ikotun, Lagos</p>
+      <a class="btn btn-ghost small" href="#booking">Book a Wash</a>
+    </div>
+  </div>
+  <p class="fineprint">&copy; <span id="year">2026</span> Panther Auto Care. Car Wash and Snooker Bar, Ikotun.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
