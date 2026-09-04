@@ -233,3 +233,49 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .section{padding:60px 0}
   .header-actions .btn{display:none}
 }
+
+/* Mobile-first ruthless view: short page, booking first, same brand */
+.sticky-book{display:none}
+.more-faq{display:none}
+@media (max-width: 640px){
+  body{padding-bottom:78px}
+  h1{font-size:2.05rem}
+  .section{padding:44px 0}
+  .section-sub{margin-bottom:1.5rem}
+  /* Hero: headline plus CTAs only, form lives in booking section */
+  .hero-grid{padding:40px 20px 56px; gap:0}
+  .hero-form-card{display:none}
+  .hero-points{display:none}
+  .lede{font-size:1rem}
+  .hero-cta .btn{flex:1 1 100%; text-align:center}
+  .marquee{font-size:.85rem}
+  /* Process section cut on mobile */
+  #steps{display:none}
+  a[href="#steps"]{display:none}
+  /* Services become a swipeable strip instead of a long stack */
+  .service-grid{
+    display:grid; grid-template-columns:none; grid-auto-flow:column;
+    grid-auto-columns:80%; gap:12px; overflow-x:auto;
+    scroll-snap-type:x mandatory; padding-bottom:10px; margin:0 -20px; padding-left:20px; padding-right:20px;
+  }
+  .service-grid .card{scroll-snap-align:start; padding:22px 18px}
+  .mini-strip{gap:10px; padding:16px}
+  /* Tighter splits */
+  .who-grid,.snooker-grid,.why-grid,.booking-grid{gap:28px}
+  .who-small{bottom:-24px}
+  .snooker-cta .btn{flex:1 1 100%; text-align:center}
+  /* Gallery becomes a swipeable strip */
+  .gallery{display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; margin:0 -20px; padding:0 20px 10px}
+  .gallery img{flex:0 0 84%; height:210px; scroll-snap-align:center}
+  /* FAQ trimmed to 3, rest behind a toggle */
+  .accordion details.extra{display:none}
+  .accordion.show-all details.extra{display:block}
+  .more-faq{display:inline-block; margin-top:8px}
+  /* Sticky booking bar */
+  .sticky-book{
+    display:block; position:fixed; left:0; right:0; bottom:0; z-index:60;
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(0,0,0,.92); border-top:1px solid var(--line);
+  }
+  .sticky-book .btn{width:100%; text-align:center}
+}

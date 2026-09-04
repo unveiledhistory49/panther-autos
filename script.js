@@ -118,4 +118,15 @@
   }
   wireForm("hero-form");
   wireForm("booking-form");
+
+  // Mobile FAQ: first 3 shown, rest behind a toggle.
+  var moreBtn = document.getElementById("more-faq");
+  var acc = document.querySelector(".accordion");
+  if (moreBtn && acc) {
+    moreBtn.addEventListener("click", function () {
+      var open = acc.classList.toggle("show-all");
+      moreBtn.setAttribute("aria-expanded", String(open));
+      moreBtn.textContent = open ? "Fewer questions" : "More questions";
+    });
+  }
 })();
